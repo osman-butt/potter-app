@@ -14,6 +14,7 @@ function initApp() {
   const potterHairColour = "black";
   const potterActor = "Daniel Radcliffe";
   const potterImage = "http://hp-api.herokuapp.com/images/harry.jpg";
+<<<<<<< Updated upstream
 
   showCharacter(
     potterName,
@@ -82,4 +83,6 @@ function showCharacter(
   for (let i = 0; i < arguments.length; i++) {
     console.log(arguments[i]);
   }
+=======
+>>>>>>> Stashed changes
 }
