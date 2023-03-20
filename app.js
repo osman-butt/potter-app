@@ -14,8 +14,6 @@ function initApp() {
   const potterHairColour = "black";
   const potterActor = "Daniel Radcliffe";
   const potterImage = "http://hp-api.herokuapp.com/images/harry.jpg";
-<<<<<<< Updated upstream
-
   showCharacter(
     potterName,
     potterGender,
@@ -43,7 +41,7 @@ function showCharacter(
   //   const articleElement = document.createElement("article");
   //   const imageElement = document.createElement("img");
   //   const nameElement = document.createElement("h2");
-  //   const houseElement = document.createElement("p");
+  //   const housseElement = document.createElement("p");
   //   const dateOfBirthElement = document.createElement("p");
   //   const actorElement = document.createElement("p");
 
@@ -83,6 +81,4 @@ function showCharacter(
   for (let i = 0; i < arguments.length; i++) {
     console.log(arguments[i]);
   }
-=======
->>>>>>> Stashed changes
 }
