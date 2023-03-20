@@ -28,6 +28,49 @@ function initApp() {
   );
 }
 
+// function showCharacter(
+//   name,
+//   gender,
+//   house,
+//   dateOfBirth,
+//   ancestry,
+//   eyeColour,
+//   hairColour,
+//   actor,
+//   image
+// ) {
+//   const articleElement = document.createElement("article");
+//   const imageElement = document.createElement("img");
+//   const nameElement = document.createElement("h2");
+//   const houseElement = document.createElement("p");
+//   const dateOfBirthElement = document.createElement("p");
+//   const actorElement = document.createElement("p");
+
+//   imageElement.src = image;
+//   nameElement.textContent = name;
+//   houseElement.textContent = house;
+//   dateOfBirthElement.textContent = `Date of Birth: ${dateOfBirth}`;
+//   actorElement.textContent = `${actor} is played by ${actor}`;
+
+//   articleElement.appendChild(imageElement);
+//   articleElement.appendChild(nameElement);
+//   articleElement.appendChild(houseElement);
+//   articleElement.appendChild(dateOfBirthElement);
+//   articleElement.appendChild(actorElement);
+
+//   articleElement.append(
+//     imageElement,
+//     nameElement,
+//     houseElement,
+//     dateOfBirthElement,
+//     actorElement
+//   );
+
+//   for (let i = 0; i < arguments.length; i++) {
+//     console.log(arguments[i]);
+//   }
+// }
+
 function showCharacter(
   name,
   gender,
@@ -39,33 +82,6 @@ function showCharacter(
   actor,
   image
 ) {
-  //   const articleElement = document.createElement("article");
-  //   const imageElement = document.createElement("img");
-  //   const nameElement = document.createElement("h2");
-  //   const houseElement = document.createElement("p");
-  //   const dateOfBirthElement = document.createElement("p");
-  //   const actorElement = document.createElement("p");
-
-  //   imageElement.src = image;
-  //   nameElement.textContent = name;
-  //   houseElement.textContent = house;
-  //   dateOfBirthElement.textContent = `Date of Birth: ${dateOfBirth}`;
-  //   actorElement.textContent = `${actor} is played by ${actor}`;
-
-  //   articleElement.appendChild(imageElement);
-  //   articleElement.appendChild(nameElement);
-  //   articleElement.appendChild(houseElement);
-  //   articleElement.appendChild(dateOfBirthElement);
-  //   articleElement.appendChild(actorElement);
-
-  //   articleElement.append(
-  //     imageElement,
-  //     nameElement,
-  //     houseElement,
-  //     dateOfBirthElement,
-  //     actorElement
-  //   );
-
   const charHTML = /*html*/ `
           <article><img src="${image}">
                 <h2>${name}</h2>
@@ -78,8 +94,4 @@ function showCharacter(
   document
     .querySelector("#characters")
     .insertAdjacentHTML("beforeend", charHTML);
-
-  for (let i = 0; i < arguments.length; i++) {
-    console.log(arguments[i]);
-  }
 }
