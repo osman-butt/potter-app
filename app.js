@@ -38,40 +38,14 @@ function showCharacter(
   actor,
   image
 ) {
-  //   const articleElement = document.createElement("article");
-  //   const imageElement = document.createElement("img");
-  //   const nameElement = document.createElement("h2");
-  //   const housseElement = document.createElement("p");
-  //   const dateOfBirthElement = document.createElement("p");
-  //   const actorElement = document.createElement("p");
-
-  //   imageElement.src = image;
-  //   nameElement.textContent = name;
-  //   houseElement.textContent = house;
-  //   dateOfBirthElement.textContent = `Date of Birth: ${dateOfBirth}`;
-  //   actorElement.textContent = `${actor} is played by ${actor}`;
-
-  //   articleElement.appendChild(imageElement);
-  //   articleElement.appendChild(nameElement);
-  //   articleElement.appendChild(houseElement);
-  //   articleElement.appendChild(dateOfBirthElement);
-  //   articleElement.appendChild(actorElement);
-
-  //   articleElement.append(
-  //     imageElement,
-  //     nameElement,
-  //     houseElement,
-  //     dateOfBirthElement,
-  //     actorElement
-  //   );
-
   const charHTML = /*html*/ `
-          <article><img src="${image}">
-                <h2>${name}</h2>
-                <p>${house}</p>
-                <p>Date of Birth: ${dateOfBirth}</p>
-                <p>Played by ${actor}</p>
-            </article>
+<tr>
+            <td><img src="${image}" /></td>
+            <td>${name}</td>
+            <td>${house}</td>
+            <td>${gender}</td>
+            <td>${dateOfBirth}</td>
+          </tr>
             `;
 
   document
